@@ -1,13 +1,13 @@
 // Quiz result options in a separate object for flexibility
 var resultOptions = [
-    {   title: 'We need help stat!',
-        desc: '<p>Here, have an Archer</p><img src="http://i.imgur.com/tXTjD9k.jpg"/>'},
-    {   title: 'Eh, maybe you\'re lonely',
-        desc: '<p>Here, have an Archer</p><img src="http://i.imgur.com/dipkE0v.jpg"/>'},
-    {   title: 'Lonely',
-        desc: '<p>Here, have an Archer</p><img src="http://i.imgur.com/WXox0Yv.jpg"/>'},
-    {   title: 'Very Lonely',
-        desc: '<p>Here, have an Archer</p><img src="http://i.imgur.com/NH5cunw.png"/>'}
+    {  // title: 'We need help stat!',
+        desc: '<p>Add placeholder, instead of Archer.</p><img src="http://i.imgur.com/tXTjD9k.jpg"/>'},
+    {  // title: 'Eh, maybe you\'re lonely',
+        desc: '<p>Add placeholder, instead of Archer.</p><img src="http://i.imgur.com/dipkE0v.jpg"/>'},
+    {  // title: 'Lonely',
+        desc: '<p>Add placeholder, instead of Archer.</p><img src="http://i.imgur.com/WXox0Yv.jpg"/>'},
+    {  // title: 'Very Lonely',
+        desc: '<p>Add placeholder, instead of Archer.</p><img src="http://i.imgur.com/NH5cunw.png"/>'}
     // {   title: 'Very High',
     //     desc: '<p>Here, have an Archer</p><img src="http://i.imgur.com/NH5cunw.png"/>'}
 ];
@@ -98,7 +98,7 @@ function calcResults(totalScore) {
             increment = minScore + (interval * n);
             if (totalScore <= increment) {
                 // populate results
-                resultsTitle.replaceWith("<h1>" + resultOptions[n].title + "</h1>");
+                // resultsTitle.replaceWith("<h1>" + resultOptions[n].title + "</h1>");
                 resultsDesc.replaceWith("<p class='desc'>" + resultOptions[n].desc + "</p>");
                 return;
             } else {
