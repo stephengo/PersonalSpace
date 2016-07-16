@@ -17,9 +17,95 @@
     <!-- Custom CSS -->
     <style>
     body {
-        padding-top: 70px;
+        padding-top: 100px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+
+        background:#efefef url('ps.png') !important;
+
     }
+    .navbar{
+      background-color: #00254c !important;
+
+    }
+    a {
+      color: #e5e5e5 !important;
+    }
+    .btn-nav {
+      padding-right: 5px !important;
+    }
+    div {
+      color: #e5e5e5 !important;
+
+    }
+
+
+
+    html,
+body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -82px 0;
+  /* Pad bottom by footer height */
+  padding: 0 0 80px 0;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 80px;
+  background-color: #f5f5f5;
+}
+
+
+#wrap > .center-container {
+  padding: 50px 0 0 0;
+  margin:0;
+}
+
+#footer > .container {
+  padding-top:5px
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.center-container {
+  height:100%;
+  display: table;
+  width:100%;
+  margin:0;
+}
+
+.center-row {
+  height:50%;
+  width:100%;
+  display: table-row;
+}
+
+.center-row > div {
+  height:100%;
+  width:50%;
+  display: table-cell;
+  border:0 solid #eee;
+  color:#fff;
+  vertical-align:middle;
+}
+
+.bg-one {
+  background:#002D5C;
+}
+.bg-two {
+  background:#002D5C;
+}
+.bg-three {
+  background:#00254c;
+}
+.bg-four {
+  background:#00254c;
+}
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -44,20 +130,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">PersonalSpace</a>
+                <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-globe"></span> PersonalSpace</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="#">Activities</a>
+                        <a href="team.html">Team</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="contact.html">Contact Us</a>
                     </li>
+                </ul>
+
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li><div class="btn-nav"><a class="btn btn-primary btn-small navbar-btn" href="main.html"><span class="glyphicon glyphicon-ok"></span> Login</a></div></li>
+                  <li><div class="btn-nav"><a class="btn btn-primary btn-small navbar-btn" href=""><span class="glyphicon glyphicon-pencil"></span> Register</a></div></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -72,13 +164,26 @@
             <div class="col-lg-12 text-center">
                 <h1>PersonalSpace</h1>
                 <p class="lead">A mental wellness aplication for space travelers.</p>
-            
+
             </div>
+
         </div>
         <!-- /.row -->
 
     </div>
     <!-- /.container -->
+
+    <div class="center-container">
+    <div class="center-row">
+    <div class="col-xs-6 bg-one text-center"><h2>Grow</h2></div>
+    <div class="col-xs-6 bg-two text-center"><h2>Connect</h2></div>
+    </div>
+    <div class="center-row">
+    <div class="col-xs-6 bg-three text-center"><h2>Explore</h2></div>
+    <div class="col-xs-6 bg-four text-center"><h2>Achieve</h2></div>
+    </div>
+    </div>
+    </div>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
