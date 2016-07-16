@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>PersonalSpace</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,11 +18,10 @@
     <style>
 <<<<<<< HEAD
     body {
-        padding-top: 50px;
+        padding-top: 0px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 
-        background:#efefef url('ps.png') !important;
-
+        background-color: #00254c !important;
     }
     .navbar{
       background-color: #00254c !important;
@@ -36,7 +35,13 @@
     }
     div {
       color: #e5e5e5 !important;
+    }
 
+    div > p {
+      text-align: center;
+    }
+    div > h2 {
+      text-align: center;
     }
 
 
@@ -107,6 +112,29 @@ body {
 .bg-four {
   background:#00254c;
 }
+
+.row {
+  padding-top: 150px;
+  padding-bottom:150px;
+}
+
+.container-fluid {
+  background-color: #002D5C;
+}
+
+#cont1 {
+  width: 100% ;
+  background-color:#002D5C;
+    background: url('ps.png') !important;
+}
+
+html {
+  background: url('ps.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 =======
 
 >>>>>>> origin/master
@@ -162,7 +190,7 @@ body {
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" id="cont1">
 
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -177,23 +205,44 @@ body {
     </div>
     <!-- /.container -->
 
-    <div class="center-container">
-    <div class="center-row">
-    <div class="col-xs-6 bg-one text-center"><h2>Grow</h2></div>
-    <div class="col-xs-6 bg-two text-center"><h2>Connect</h2></div>
+  <div class="container-fluid">
+
+    <div class="col-lg-4">
+    <p></br><span style="font-size:4em;" class="glyphicon glyphicon-equalizer"></span></p>
+    <h2>Grow</h2>
+    <p>Be the best version of yourself, regardless of where you are in the universe.</p>
     </div>
-    <div class="center-row">
-    <div class="col-xs-6 bg-three text-center"><h2>Explore</h2></div>
-    <div class="col-xs-6 bg-four text-center"><h2>Achieve</h2></div>
+
+    <div class="col-lg-4">
+    <p></br><span style="font-size:4em;" class="glyphicon glyphicon-heart"></span></p>
+    <h2>Connect</h2>
+    <p>Stay connected with and expand your support network.</p>
     </div>
-    </div>
-    </div>
+
+    <div class="col-lg-4">
+    <p></br><span style="font-size:4em;" class="glyphicon glyphicon-plane"></span></p>
+    <h2>Explore</h2>
+    <p>Explore and continue to learn about yourself.</p>
+    <div>
+
+  </div>
+
+
+
+  <div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <p class="navbar-text pull-left">© 2016 - Site Built By Team PersonalSpace for GT CS 3750
+    </p>
+
+  </div>
+  </div>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
 
 </body>
 
